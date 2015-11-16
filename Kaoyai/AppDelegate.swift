@@ -11,6 +11,8 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    //Phase 1 Connect Code to apiLoader
 
     var window: UIWindow?
 

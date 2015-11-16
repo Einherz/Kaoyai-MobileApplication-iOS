@@ -103,6 +103,7 @@
 		DF3379B71BF4E57500A11711 /* mapDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapDetailView.swift; sourceTree = "<group>"; };
 		DF3379B91BF4E58600A11711 /* howtoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = howtoDetailView.swift; sourceTree = "<group>"; };
 		DF3379BB1BF4E76400A11711 /* apiLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiLoader.swift; sourceTree = "<group>"; };
+		DF49DA6A1BFA1E54005865BC /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridging.h; path = ../Bridging.h; sourceTree = "<group>"; };
 		DFE871891BDF3355003BE1F3 /* Kaoyai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaoyai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE8718C1BDF3355003BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE8718E1BDF3355003BE1F3 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
@@ -232,6 +233,7 @@
 				DFE871BE1BDF33E4003BE1F3 /* View */,
 				DFE871BD1BDF33D8003BE1F3 /* Model */,
 				DFE8718C1BDF3355003BE1F3 /* AppDelegate.swift */,
+				DF49DA6A1BFA1E54005865BC /* Bridging.h */,
 				DFE871901BDF3355003BE1F3 /* Main.storyboard */,
 				DFE871961BDF3355003BE1F3 /* Assets.xcassets */,
 				DFE871981BDF3355003BE1F3 /* LaunchScreen.storyboard */,
@@ -520,6 +522,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -565,6 +568,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -587,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Kaoyai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.Kaoyai;
@@ -598,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Kaoyai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.Kaoyai;
