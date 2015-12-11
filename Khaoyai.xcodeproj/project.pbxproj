@@ -31,6 +31,10 @@
 		DF3379B81BF4E57500A11711 /* mapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3379B71BF4E57500A11711 /* mapDetailView.swift */; };
 		DF3379BA1BF4E58600A11711 /* howtoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3379B91BF4E58600A11711 /* howtoDetailView.swift */; };
 		DF3379BC1BF4E76400A11711 /* apiLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3379BB1BF4E76400A11711 /* apiLoader.swift */; };
+		DF39E8AB1C1B149300E6EDC5 /* Version+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF39E8A91C1B149300E6EDC5 /* Version+CoreDataProperties.swift */; };
+		DF39E8AC1C1B149300E6EDC5 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF39E8AA1C1B149300E6EDC5 /* Version.swift */; };
+		DF39E8B21C1B1B3800E6EDC5 /* dbConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF39E8B11C1B1B3800E6EDC5 /* dbConnector.swift */; };
+		DF5A84FE1C17C6AF002F89F3 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A84FD1C17C6AF002F89F3 /* config.swift */; };
 		DFE8718D1BDF3355003BE1F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8718C1BDF3355003BE1F3 /* AppDelegate.swift */; };
 		DFE8718F1BDF3355003BE1F3 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE8718E1BDF3355003BE1F3 /* homeView.swift */; };
 		DFE871921BDF3355003BE1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE871901BDF3355003BE1F3 /* Main.storyboard */; };
@@ -103,8 +107,12 @@
 		DF3379B71BF4E57500A11711 /* mapDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapDetailView.swift; sourceTree = "<group>"; };
 		DF3379B91BF4E58600A11711 /* howtoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = howtoDetailView.swift; sourceTree = "<group>"; };
 		DF3379BB1BF4E76400A11711 /* apiLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiLoader.swift; sourceTree = "<group>"; };
+		DF39E8A91C1B149300E6EDC5 /* Version+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Version+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF39E8AA1C1B149300E6EDC5 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		DF39E8B11C1B1B3800E6EDC5 /* dbConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dbConnector.swift; sourceTree = "<group>"; };
 		DF49DA6A1BFA1E54005865BC /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridging.h; path = ../Bridging.h; sourceTree = "<group>"; };
-		DFE871891BDF3355003BE1F3 /* Kaoyai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaoyai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5A84FD1C17C6AF002F89F3 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		DFE871891BDF3355003BE1F3 /* Khaoyai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Khaoyai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE8718C1BDF3355003BE1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE8718E1BDF3355003BE1F3 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		DFE871911BDF3355003BE1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,10 +120,10 @@
 		DFE871961BDF3355003BE1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFE871991BDF3355003BE1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFE8719B1BDF3355003BE1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFE871A01BDF3355003BE1F3 /* KaoyaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaoyaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE871A01BDF3355003BE1F3 /* Khaoyai.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khaoyai.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE871A41BDF3355003BE1F3 /* KaoyaiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaoyaiTests.swift; sourceTree = "<group>"; };
 		DFE871A61BDF3355003BE1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFE871AB1BDF3355003BE1F3 /* KaoyaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaoyaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE871AB1BDF3355003BE1F3 /* Khaoyai.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Khaoyai.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE871AF1BDF3355003BE1F3 /* KaoyaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaoyaiUITests.swift; sourceTree = "<group>"; };
 		DFE871B11BDF3355003BE1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,9 +226,9 @@
 		DFE8718A1BDF3355003BE1F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFE871891BDF3355003BE1F3 /* Kaoyai.app */,
-				DFE871A01BDF3355003BE1F3 /* KaoyaiTests.xctest */,
-				DFE871AB1BDF3355003BE1F3 /* KaoyaiUITests.xctest */,
+				DFE871891BDF3355003BE1F3 /* Khaoyai.app */,
+				DFE871A01BDF3355003BE1F3 /* Khaoyai.xctest */,
+				DFE871AB1BDF3355003BE1F3 /* Khaoyai.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +272,8 @@
 		DFE871BD1BDF33D8003BE1F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF39E8A91C1B149300E6EDC5 /* Version+CoreDataProperties.swift */,
+				DF39E8AA1C1B149300E6EDC5 /* Version.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,6 +296,8 @@
 			isa = PBXGroup;
 			children = (
 				DF3379BB1BF4E76400A11711 /* apiLoader.swift */,
+				DF5A84FD1C17C6AF002F89F3 /* config.swift */,
+				DF39E8B11C1B1B3800E6EDC5 /* dbConnector.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -293,9 +305,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DFE871881BDF3355003BE1F3 /* Kaoyai */ = {
+		DFE871881BDF3355003BE1F3 /* Khaoyai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFE871B41BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "Kaoyai" */;
+			buildConfigurationList = DFE871B41BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "Khaoyai" */;
 			buildPhases = (
 				DFE871851BDF3355003BE1F3 /* Sources */,
 				DFE871861BDF3355003BE1F3 /* Frameworks */,
@@ -305,14 +317,14 @@
 			);
 			dependencies = (
 			);
-			name = Kaoyai;
+			name = Khaoyai;
 			productName = Kaoyai;
-			productReference = DFE871891BDF3355003BE1F3 /* Kaoyai.app */;
+			productReference = DFE871891BDF3355003BE1F3 /* Khaoyai.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DFE8719F1BDF3355003BE1F3 /* KaoyaiTests */ = {
+		DFE8719F1BDF3355003BE1F3 /* KhaoyaiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFE871B71BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KaoyaiTests" */;
+			buildConfigurationList = DFE871B71BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KhaoyaiTests" */;
 			buildPhases = (
 				DFE8719C1BDF3355003BE1F3 /* Sources */,
 				DFE8719D1BDF3355003BE1F3 /* Frameworks */,
@@ -323,14 +335,14 @@
 			dependencies = (
 				DFE871A21BDF3355003BE1F3 /* PBXTargetDependency */,
 			);
-			name = KaoyaiTests;
+			name = KhaoyaiTests;
 			productName = KaoyaiTests;
-			productReference = DFE871A01BDF3355003BE1F3 /* KaoyaiTests.xctest */;
+			productReference = DFE871A01BDF3355003BE1F3 /* Khaoyai.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DFE871AA1BDF3355003BE1F3 /* KaoyaiUITests */ = {
+		DFE871AA1BDF3355003BE1F3 /* KhaoyaiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFE871BA1BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KaoyaiUITests" */;
+			buildConfigurationList = DFE871BA1BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KhaoyaiUITests" */;
 			buildPhases = (
 				DFE871A71BDF3355003BE1F3 /* Sources */,
 				DFE871A81BDF3355003BE1F3 /* Frameworks */,
@@ -341,9 +353,9 @@
 			dependencies = (
 				DFE871AD1BDF3355003BE1F3 /* PBXTargetDependency */,
 			);
-			name = KaoyaiUITests;
+			name = KhaoyaiUITests;
 			productName = KaoyaiUITests;
-			productReference = DFE871AB1BDF3355003BE1F3 /* KaoyaiUITests.xctest */;
+			productReference = DFE871AB1BDF3355003BE1F3 /* Khaoyai.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -369,7 +381,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DFE871841BDF3355003BE1F3 /* Build configuration list for PBXProject "Kaoyai" */;
+			buildConfigurationList = DFE871841BDF3355003BE1F3 /* Build configuration list for PBXProject "Khaoyai" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -382,9 +394,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DFE871881BDF3355003BE1F3 /* Kaoyai */,
-				DFE8719F1BDF3355003BE1F3 /* KaoyaiTests */,
-				DFE871AA1BDF3355003BE1F3 /* KaoyaiUITests */,
+				DFE871881BDF3355003BE1F3 /* Khaoyai */,
+				DFE8719F1BDF3355003BE1F3 /* KhaoyaiTests */,
+				DFE871AA1BDF3355003BE1F3 /* KhaoyaiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -437,15 +449,19 @@
 				DF3379B21BF4E53D00A11711 /* mapView.swift in Sources */,
 				DF3379A21BF4E3E100A11711 /* AFSecurityPolicy.m in Sources */,
 				DF3379AD1BF4E3E100A11711 /* UIRefreshControl+AFNetworking.m in Sources */,
+				DF39E8AC1C1B149300E6EDC5 /* Version.swift in Sources */,
 				DF3379AE1BF4E3E100A11711 /* UIWebView+AFNetworking.m in Sources */,
 				DF3379A01BF4E3E100A11711 /* AFHTTPSessionManager.m in Sources */,
 				DF3379B61BF4E55400A11711 /* aboutView.swift in Sources */,
 				DF3379A91BF4E3E100A11711 /* UIAlertView+AFNetworking.m in Sources */,
+				DF39E8AB1C1B149300E6EDC5 /* Version+CoreDataProperties.swift in Sources */,
 				DF3379BA1BF4E58600A11711 /* howtoDetailView.swift in Sources */,
+				DF39E8B21C1B1B3800E6EDC5 /* dbConnector.swift in Sources */,
 				DF3379A41BF4E3E100A11711 /* AFURLRequestSerialization.m in Sources */,
 				DF3379A71BF4E3E100A11711 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				DF3379A61BF4E3E100A11711 /* AFURLSessionManager.m in Sources */,
 				DFE8718F1BDF3355003BE1F3 /* homeView.swift in Sources */,
+				DF5A84FE1C17C6AF002F89F3 /* config.swift in Sources */,
 				DF3379B41BF4E54B00A11711 /* contactView.swift in Sources */,
 				DFE8718D1BDF3355003BE1F3 /* AppDelegate.swift in Sources */,
 			);
@@ -472,12 +488,12 @@
 /* Begin PBXTargetDependency section */
 		DFE871A21BDF3355003BE1F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DFE871881BDF3355003BE1F3 /* Kaoyai */;
+			target = DFE871881BDF3355003BE1F3 /* Khaoyai */;
 			targetProxy = DFE871A11BDF3355003BE1F3 /* PBXContainerItemProxy */;
 		};
 		DFE871AD1BDF3355003BE1F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DFE871881BDF3355003BE1F3 /* Kaoyai */;
+			target = DFE871881BDF3355003BE1F3 /* Khaoyai */;
 			targetProxy = DFE871AC1BDF3355003BE1F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -539,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -580,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging.h;
@@ -597,7 +613,7 @@
 				INFOPLIST_FILE = Kaoyai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.Kaoyai;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Khaoyai;
 			};
 			name = Debug;
 		};
@@ -609,7 +625,7 @@
 				INFOPLIST_FILE = Kaoyai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.Kaoyai;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Khaoyai;
 			};
 			name = Release;
 		};
@@ -620,8 +636,8 @@
 				INFOPLIST_FILE = KaoyaiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.KaoyaiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaoyai.app/Kaoyai";
+				PRODUCT_NAME = Khaoyai;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Khaoyai.app/Khaoyai";
 			};
 			name = Debug;
 		};
@@ -632,8 +648,8 @@
 				INFOPLIST_FILE = KaoyaiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.KaoyaiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaoyai.app/Kaoyai";
+				PRODUCT_NAME = Khaoyai;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Khaoyai.app/Khaoyai";
 			};
 			name = Release;
 		};
@@ -643,7 +659,7 @@
 				INFOPLIST_FILE = KaoyaiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.KaoyaiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Khaoyai;
 				TEST_TARGET_NAME = Kaoyai;
 				USES_XCTRUNNER = YES;
 			};
@@ -655,7 +671,7 @@
 				INFOPLIST_FILE = KaoyaiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theamorn.KaoyaiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Khaoyai;
 				TEST_TARGET_NAME = Kaoyai;
 				USES_XCTRUNNER = YES;
 			};
@@ -664,7 +680,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFE871841BDF3355003BE1F3 /* Build configuration list for PBXProject "Kaoyai" */ = {
+		DFE871841BDF3355003BE1F3 /* Build configuration list for PBXProject "Khaoyai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFE871B21BDF3355003BE1F3 /* Debug */,
@@ -673,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFE871B41BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "Kaoyai" */ = {
+		DFE871B41BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "Khaoyai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFE871B51BDF3355003BE1F3 /* Debug */,
@@ -682,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFE871B71BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KaoyaiTests" */ = {
+		DFE871B71BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KhaoyaiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFE871B81BDF3355003BE1F3 /* Debug */,
@@ -691,7 +707,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFE871BA1BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KaoyaiUITests" */ = {
+		DFE871BA1BDF3355003BE1F3 /* Build configuration list for PBXNativeTarget "KhaoyaiUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFE871BB1BDF3355003BE1F3 /* Debug */,

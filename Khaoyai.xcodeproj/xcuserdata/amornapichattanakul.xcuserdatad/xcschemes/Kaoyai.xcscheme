@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DFE871881BDF3355003BE1F3"
-               BuildableName = "Kaoyai.app"
-               BlueprintName = "Kaoyai"
-               ReferencedContainer = "container:Kaoyai.xcodeproj">
+               BuildableName = "Khaoyai.app"
+               BlueprintName = "Khaoyai"
+               ReferencedContainer = "container:Khaoyai.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DFE8719F1BDF3355003BE1F3"
-               BuildableName = "KaoyaiTests.xctest"
-               BlueprintName = "KaoyaiTests"
-               ReferencedContainer = "container:Kaoyai.xcodeproj">
+               BuildableName = "Khaoyai.xctest"
+               BlueprintName = "KhaoyaiTests"
+               ReferencedContainer = "container:Khaoyai.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DFE871AA1BDF3355003BE1F3"
-               BuildableName = "KaoyaiUITests.xctest"
-               BlueprintName = "KaoyaiUITests"
-               ReferencedContainer = "container:Kaoyai.xcodeproj">
+               BuildableName = "Khaoyai.xctest"
+               BlueprintName = "KhaoyaiUITests"
+               ReferencedContainer = "container:Khaoyai.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFE871881BDF3355003BE1F3"
-            BuildableName = "Kaoyai.app"
-            BlueprintName = "Kaoyai"
-            ReferencedContainer = "container:Kaoyai.xcodeproj">
+            BuildableName = "Khaoyai.app"
+            BlueprintName = "Khaoyai"
+            ReferencedContainer = "container:Khaoyai.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFE871881BDF3355003BE1F3"
-            BuildableName = "Kaoyai.app"
-            BlueprintName = "Kaoyai"
-            ReferencedContainer = "container:Kaoyai.xcodeproj">
+            BuildableName = "Khaoyai.app"
+            BlueprintName = "Khaoyai"
+            ReferencedContainer = "container:Khaoyai.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DFE871881BDF3355003BE1F3"
-            BuildableName = "Kaoyai.app"
-            BlueprintName = "Kaoyai"
-            ReferencedContainer = "container:Kaoyai.xcodeproj">
+            BuildableName = "Khaoyai.app"
+            BlueprintName = "Khaoyai"
+            ReferencedContainer = "container:Khaoyai.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

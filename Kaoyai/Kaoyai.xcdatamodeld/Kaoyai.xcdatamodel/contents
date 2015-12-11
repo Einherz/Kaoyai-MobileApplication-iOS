@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
     <entity name="Contact" syncable="YES">
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telNo" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Home" syncable="YES">
         <attribute name="highest" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="lowest" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="now" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="resort" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="tent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="todayvisitor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="visitor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <entity name="Howto" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subtopics" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="topics" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
@@ -23,16 +25,23 @@
         <attribute name="imagecover" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="News" syncable="YES">
+    <entity name="News" representedClassName=".News" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Version" representedClassName=".Version" syncable="YES">
+        <attribute name="contactVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="howtoVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="mapVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="newsVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Howto" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Map" positionX="-63" positionY="9" width="128" height="105"/>
-        <element name="Contact" positionX="-54" positionY="36" width="128" height="75"/>
+        <element name="Contact" positionX="-54" positionY="36" width="128" height="90"/>
         <element name="Home" positionX="-27" positionY="54" width="128" height="135"/>
+        <element name="Howto" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Map" positionX="-63" positionY="9" width="128" height="105"/>
         <element name="News" positionX="-9" positionY="99" width="128" height="90"/>
+        <element name="Version" positionX="-36" positionY="63" width="128" height="105"/>
     </elements>
 </model>

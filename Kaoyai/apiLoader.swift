@@ -7,28 +7,55 @@
 //
 
 import Foundation
-
+import CoreData
 
 class apiLoader{
-    let basedAPI:String = "http://www.thethanisorn.com/khaoyai/api/"
-    let tempLog:String = "tempnow.php"
     
-    func getDataAPI(apiCaller:String, callback:(jsonData:NSDictionary) -> ()){
-
-        let manager = AFHTTPSessionManager(baseURL: NSURL(string: basedAPI))
+    func getDataAPI(apiCaller:String, callback:(jsonData:NSArray) -> ()){
+        
+        let data:NSMutableArray = []
+        let manager = AFHTTPSessionManager(baseURL: NSURL(string: config.basedAPI))
         manager.responseSerializer = AFJSONResponseSerializer()
         manager.GET(apiCaller, parameters: nil, success: { task, responseObject in
             //Save Data in Database First then reply back to Main page
-            
+
             //Get Object at first Index because API is Array of Json
-            callback(jsonData: responseObject.objectAtIndex(0) as! NSDictionary)
+            for Obj in responseObject as! NSArray{
+                data.addObject(Obj)
+            }
+            callback(jsonData: data)
             }, failure: { task, error in
                 print("Problem :  \(error.localizedDescription)");
             })
     }
     
+    func checkVerion(apiCaller:String, VersionDB:Float, Indexed:Int,  callback:(allow:Bool) -> ()){
+        let manager = AFHTTPSessionManager(baseURL: NSURL(string: config.basedAPI))
+        manager.responseSerializer = AFJSONResponseSerializer()
+        manager.GET(apiCaller, parameters: nil, success: { task, responseObject in
+            //Read version in the table
+            let loadVersion = Float(responseObject.objectAtIndex(0).valueForKey("Versions") as! String)
+            print(loadVersion)
+            if(VersionDB < loadVersion){
+                //Have to update this one is adding data//
+                let data = Version(value: loadVersion!, dataDB: Indexed, context: self.sharedContext)
+                self.sharedContext.performBlockAndWait({ () -> Void in
+                    dbConnector.sharedInstance().saveContext() })
+                callback(allow: true)
+            } else {
+                callback(allow: false)
+            }
+            }, failure: { task, error in
+                print("Problem :  \(error.localizedDescription)");
+        })
+    }
+    
     func postDataAPI(userID:String, callback:(jsonData:NSDictionary) -> ()){
         
+    }
+    
+    var sharedContext: NSManagedObjectContext {
+        return dbConnector.sharedInstance().managedObjectContext
     }
     
 }
