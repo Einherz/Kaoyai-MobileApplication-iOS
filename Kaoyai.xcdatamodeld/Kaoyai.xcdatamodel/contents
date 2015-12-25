@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Contact" representedClassName=".Contact" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Home" representedClassName=".Home" syncable="YES">
+        <attribute name="highest" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="humid" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lowest" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="now" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="resort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Howto" representedClassName=".Howto" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topics" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Map" representedClassName=".Map" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagecover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="howto" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Howto" syncable="YES"/>
+    </entity>
+    <entity name="News" representedClassName=".News" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Version" representedClassName=".Version" syncable="YES">
+        <attribute name="contactVersion" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="howtoVersion" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="mapVersion" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="newsVersion" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="-299" positionY="315" width="128" height="103"/>
+        <element name="Home" positionX="16" positionY="63" width="128" height="148"/>
+        <element name="Howto" positionX="-164" positionY="-126" width="128" height="135"/>
+        <element name="Map" positionX="-297" positionY="60" width="128" height="135"/>
+        <element name="News" positionX="81" positionY="306" width="128" height="103"/>
+        <element name="Version" positionX="-65" positionY="309" width="128" height="103"/>
+    </elements>
+</model>

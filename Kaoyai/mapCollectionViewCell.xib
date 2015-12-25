@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="mapCollectionViewCell" customModule="Khaoyai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-qg-A8p">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                        <animations/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuB-CV-lDf">
+                        <rect key="frame" x="0.0" y="50" width="85" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywl-ze-PPo">
+                                <rect key="frame" x="8" y="3" width="69" height="15"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.49580342060810811" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Fq9-e0-jfU"/>
+                            <constraint firstAttribute="trailing" secondItem="ywl-ze-PPo" secondAttribute="trailing" constant="8" id="Ivw-3v-cnb"/>
+                            <constraint firstItem="ywl-ze-PPo" firstAttribute="leading" secondItem="JuB-CV-lDf" secondAttribute="leading" constant="8" id="kzR-Hh-xWQ"/>
+                            <constraint firstItem="ywl-ze-PPo" firstAttribute="centerY" secondItem="JuB-CV-lDf" secondAttribute="centerY" id="nJQ-cY-hD2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JuB-CV-lDf" secondAttribute="bottom" id="4xu-Xr-k72"/>
+                <constraint firstAttribute="trailing" secondItem="JuB-CV-lDf" secondAttribute="trailing" id="QTi-pH-GhH"/>
+                <constraint firstItem="JuB-CV-lDf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TCn-dW-Yd1"/>
+                <constraint firstAttribute="bottom" secondItem="uNg-qg-A8p" secondAttribute="bottom" id="gp2-Dr-ItB"/>
+                <constraint firstItem="uNg-qg-A8p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jOP-qp-Ps4"/>
+                <constraint firstAttribute="trailing" secondItem="uNg-qg-A8p" secondAttribute="trailing" id="kXh-hg-zQn"/>
+                <constraint firstItem="uNg-qg-A8p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yd2-Xx-fk7"/>
+            </constraints>
+            <connections>
+                <outlet property="mapImg" destination="uNg-qg-A8p" id="TaN-pB-fl4"/>
+                <outlet property="mapName" destination="ywl-ze-PPo" id="jqf-pA-Uox"/>
+            </connections>
+            <point key="canvasLocation" x="183" y="306"/>
+        </collectionViewCell>
+    </objects>
+</document>
