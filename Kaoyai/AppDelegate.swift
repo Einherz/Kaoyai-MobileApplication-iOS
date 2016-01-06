@@ -8,17 +8,66 @@
 
 import UIKit
 import CoreData
+import CoreSpotlight
+import MobileCoreServices
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    //Phase 1 Connect Code to apiLoader
+    //coredata checking
+    //map link how to
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+        
+        let gai = GAI.sharedInstance()
+        gai.trackUncaughtExceptions = true
+        gai.dispatchInterval = 20
+        gai.logger.logLevel = GAILogLevel.Verbose
+        gai.trackerWithTrackingId("UA-45872526-11")
+        
+        Mint.sharedInstance().enableLogging(true)
+        Mint.sharedInstance().setLogging(5)
+        Mint.sharedInstance().initAndStartSession("894f5be1")
+        Mint.sharedInstance().startSessionAsyncWithCompletionBlock(nil)
+        
+        return true
+    }
+    
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        
+        if userActivity.activityType == CSSearchableItemActionType {
+            
+            if let uniqeID = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+                
+                print("activity info: \(uniqeID)")
+                let dbSaver = coreDataController()
+                
+                if uniqeID.containsString("How to:") {
+                    
+                    let itemID = uniqeID.stringByReplacingOccurrencesOfString("How to:", withString: "")
+                    let infoU = ["objType":"Howto"]
+                    print("itemID howto: \(itemID)")
+                    
+                    NSNotificationCenter.defaultCenter().postNotificationName("DisplaySpotlightSearch", object: dbSaver.getItem(itemID, table: "Howto") as! Howto, userInfo: infoU)
+                    
+                }else{
+                    
+                    let itemID = uniqeID.stringByReplacingOccurrencesOfString("Map:", withString: "")
+                    let infoU = ["objType":"Map"]
+                    print("itemID map: \(itemID)")
+                    
+                    NSNotificationCenter.defaultCenter().postNotificationName("DisplaySpotlightSearch", object: dbSaver.getItem(itemID, table: "Map") as! Map, userInfo: infoU)
+                }
+            }
+        }
+        
         return true
     }
 

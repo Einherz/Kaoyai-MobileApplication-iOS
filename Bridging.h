@@ -10,5 +10,11 @@
 #define Bridging_h
 
 #import "AFNetworking.h"
+#import "GAI.h"
+#import "GAIFields.h"
+#import "GAIDictionaryBuilder.h"
+#import "SplunkMint/SplunkMint.h"
+#import "UIView+Toast.h"
 
 #endif /* Bridging_h */
+

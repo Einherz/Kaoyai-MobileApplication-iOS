@@ -35,22 +35,5 @@ class Version: NSManagedObject {
         contactVersion = dictionary[key.contact] as? NSNumber
     }
     
-    init(value: Float, dataDB:Int, context:NSManagedObjectContext){
-        let entity =  NSEntityDescription.entityForName("Version", inManagedObjectContext: context)!
-        super.init(entity: entity, insertIntoManagedObjectContext: context)
-        
-        switch dataDB{
-        case 1:
-            newsVersion = NSNumber(float: value)
-        case 2:
-            howtoVersion = NSNumber(float: value)
-        case 3:
-            mapVersion = NSNumber(float: value)
-        case 4:
-            contactVersion = NSNumber(float: value)
-        default:
-            print("No exist Data")
-        }
-    }
     
 }

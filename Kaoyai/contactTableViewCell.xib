@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="contactTableViewCell" customModule="Khaoyai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBz-gU-GGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="10" height="59"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.54117647059999996" green="0.76078431369999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="QXo-sM-ab3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jza-em-sGN">
+                        <rect key="frame" x="18" y="7" width="219" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-CS-VJA">
+                        <rect key="frame" x="18" y="40" width="219" height="12"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMj-Np-oxV">
+                        <rect key="frame" x="245" y="14" width="35" height="35"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="YoB-GO-sFt"/>
+                            <constraint firstAttribute="width" secondItem="kMj-Np-oxV" secondAttribute="height" multiplier="1:1" id="i2n-CB-1zr"/>
+                        </constraints>
+                        <state key="normal" image="call"/>
+                        <connections>
+                            <action selector="callContact:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jay-W3-zzT"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSb-g3-8Zr">
+                        <rect key="frame" x="18" y="26" width="219" height="12"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="O6r-CS-VJA" firstAttribute="trailing" secondItem="gSb-g3-8Zr" secondAttribute="trailing" id="HVh-8Z-BaX"/>
+                    <constraint firstItem="jza-em-sGN" firstAttribute="leading" secondItem="eBz-gU-GGZ" secondAttribute="trailing" constant="8" id="ODu-CK-Se4"/>
+                    <constraint firstItem="O6r-CS-VJA" firstAttribute="top" secondItem="gSb-g3-8Zr" secondAttribute="bottom" constant="2" id="PjT-3f-7gO"/>
+                    <constraint firstItem="gSb-g3-8Zr" firstAttribute="leading" secondItem="jza-em-sGN" secondAttribute="leading" id="PwG-qp-4KQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kMj-Np-oxV" secondAttribute="trailing" constant="12" id="TVZ-MR-Lxs"/>
+                    <constraint firstItem="eBz-gU-GGZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="W7I-uS-0CH"/>
+                    <constraint firstItem="gSb-g3-8Zr" firstAttribute="top" secondItem="jza-em-sGN" secondAttribute="bottom" constant="2" id="ZRW-t8-Fbg"/>
+                    <constraint firstItem="gSb-g3-8Zr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="2" id="aOU-u5-T4Q"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eBz-gU-GGZ" secondAttribute="bottom" constant="-8" id="bZ7-r1-2V3"/>
+                    <constraint firstItem="O6r-CS-VJA" firstAttribute="leading" secondItem="gSb-g3-8Zr" secondAttribute="leading" id="ehL-3L-7PK"/>
+                    <constraint firstItem="kMj-Np-oxV" firstAttribute="leading" secondItem="jza-em-sGN" secondAttribute="trailing" constant="8" id="enc-kx-x6L"/>
+                    <constraint firstItem="eBz-gU-GGZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="fmC-pr-L6s"/>
+                    <constraint firstItem="gSb-g3-8Zr" firstAttribute="trailing" secondItem="jza-em-sGN" secondAttribute="trailing" id="nLa-Ed-LRf"/>
+                    <constraint firstItem="kMj-Np-oxV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="2" id="xrN-JU-ZOd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="colourV" destination="eBz-gU-GGZ" id="JVs-af-FNn"/>
+                <outlet property="ctName" destination="jza-em-sGN" id="SIv-sV-cTq"/>
+                <outlet property="ctNumber" destination="O6r-CS-VJA" id="te7-eA-V1b"/>
+                <outlet property="ctPosition" destination="gSb-g3-8Zr" id="CAZ-EH-ho5"/>
+            </connections>
+            <point key="canvasLocation" x="319" y="342"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="call" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "นักท่องเที่ยวล่าสุด"; ObjectID = "00t-5Y-FIo"; */
+"00t-5Y-FIo.text" = "นักท่องเที่ยวล่าสุด";
+
+/* Class = "UILabel"; text = "How to"; ObjectID = "0Bc-JU-S9G"; */
+"0Bc-JU-S9G.text" = "วิธีท่องเที่ยว";
+
+/* Class = "UITabBarItem"; title = "ติดต่อ"; ObjectID = "2hK-Db-oTt"; */
+"2hK-Db-oTt.title" = "ติดต่อ";
+
+/* Class = "UILabel"; text = "N/A"; ObjectID = "4Or-xB-J2G"; */
+"4Or-xB-J2G.text" = "จอง";
+
+/* Class = "UILabel"; text = "ความชื้น"; ObjectID = "5es-Gx-S5k"; */
+"5es-Gx-S5k.text" = "ความชื้น";
+
+/* Class = "UITabBarItem"; title = "วิธีท่องเที่ยว"; ObjectID = "7Ds-5Q-4yy"; */
+"7Ds-5Q-4yy.title" = "วิธีท่องเที่ยว";
+
+/* Class = "UILabel"; text = "บนอุทยานแห่งชาติ"; ObjectID = "7y3-gF-txc"; */
+"7y3-gF-txc.text" = "บนอุทยานแห่งชาติ";
+
+/* Class = "UITabBarItem"; title = "แผนที่"; ObjectID = "Df8-jP-eJm"; */
+"Df8-jP-eJm.title" = "แผนที่";
+
+/* Class = "UITabBarItem"; title = "เกี่ยวกับแอพ"; ObjectID = "Iny-ZP-Tus"; */
+"Iny-ZP-Tus.title" = "เกี่ยวกับแอพ";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "OWi-vf-obo"; */
+"OWi-vf-obo.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PMx-t0-KNj"; */
+"PMx-t0-KNj.text" = "Label";
+
+/* Class = "UILabel"; text = "N/A"; ObjectID = "REo-IQ-qNn"; */
+"REo-IQ-qNn.text" = "N/A";
+
+/* Class = "UILabel"; text = "ข่าวตรงจากเขาใหญ่"; ObjectID = "Vst-rz-3d2"; */
+"Vst-rz-3d2.text" = "ข่าวตรงจากเขาใหญ่";
+
+/* Class = "UILabel"; text = "N/A"; ObjectID = "WXe-5J-ftX"; */
+"WXe-5J-ftX.text" = "N/A";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "cDN-LC-mdR"; */
+"cDN-LC-mdR.normalTitle" = "Back";
+
+/* Class = "UITabBarItem"; title = "หน้าแรก"; ObjectID = "cj1-ZV-Lma"; */
+"cj1-ZV-Lma.title" = "หน้าแรก";
+
+/* Class = "UILabel"; text = "Resort"; ObjectID = "hyb-0E-nn7"; */
+"hyb-0E-nn7.text" = "บ้านพัก";
+
+/* Class = "UIButton"; normalTitle = "สถานที่ท่องเที่ยว"; ObjectID = "nBh-SI-CJW"; */
+"nBh-SI-CJW.normalTitle" = "สถานที่ท่องเที่ยว";
+
+/* Class = "UILabel"; text = "สถานที่ท่องเที่ยว"; ObjectID = "ptg-eq-XCA"; */
+"ptg-eq-XCA.text" = "สถานที่ท่องเที่ยว";
+
+/* Class = "UILabel"; text = "Contact"; ObjectID = "sAh-YF-xc6"; */
+"sAh-YF-xc6.text" = "ติดต่อ";
+
+/* Class = "UILabel"; text = "N/A"; ObjectID = "ut2-bQ-PJl"; */
+"ut2-bQ-PJl.text" = "N/A";
+
+/* Class = "UIButton"; normalTitle = "วิธีการท่องเที่ยว"; ObjectID = "vFb-Fw-Uly"; */
+"vFb-Fw-Uly.normalTitle" = "วิธีการท่องเที่ยว";
+
+/* Class = "UILabel"; text = "N/A"; ObjectID = "veF-Ja-DMu"; */
+"veF-Ja-DMu.text" = "N/A";
+
+/* Class = "UILabel"; text = "N/A"; ObjectID = "x6q-W7-bZ9"; */
+"x6q-W7-bZ9.text" = "N/A";

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="localNewsTableViewCell" customModule="Khaoyai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="News Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-og-VlX">
+                        <rect key="frame" x="16" y="13" width="183" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/25/58" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfY-1l-967">
+                        <rect key="frame" x="207" y="13" width="80" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="RKw-B2-TyD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="wfY-1l-967" firstAttribute="leading" secondItem="ymn-og-VlX" secondAttribute="trailing" constant="8" id="FcO-aA-Xez"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="ymn-og-VlX" secondAttribute="leading" constant="-8" id="Gca-90-LNr"/>
+                    <constraint firstItem="ymn-og-VlX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="o3f-8f-QGW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wfY-1l-967" secondAttribute="trailing" constant="33" id="22G-EU-4n7"/>
+                <constraint firstItem="wfY-1l-967" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="Afh-J2-UZs"/>
+            </constraints>
+            <connections>
+                <outlet property="newsDate" destination="wfY-1l-967" id="6Qi-LV-eDP"/>
+                <outlet property="newsTitle" destination="ymn-og-VlX" id="0G5-NI-cuF"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="281"/>
+        </tableViewCell>
+    </objects>
+</document>
