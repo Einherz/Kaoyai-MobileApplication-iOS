@@ -214,7 +214,6 @@ class coreDataController{
         progress.show(message: "Updating...", style: BlueIndicatorStyle())
         
         let batches = AFURLConnectionOperation.batchOfRequestOperations(requestQueue as [NSOperation], progressBlock: { (numberOfFinishedOperations, totalNumberOfOperations) -> Void in
-            //Working in here for saving each image
             print("Done \(numberOfFinishedOperations) from \(totalNumberOfOperations)")
 //            if(self.status == "Howto" && self.pathName != ""){
 //                 print("image this :\(self.pathName != "")")

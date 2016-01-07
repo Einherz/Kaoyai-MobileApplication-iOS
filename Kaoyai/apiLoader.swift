@@ -65,11 +65,12 @@ class apiLoader:NSObject,NSFetchedResultsControllerDelegate{
                 do{
                     print("Query Database...")
                     let result = try sharedContext.executeFetchRequest(request)
-                    print("Number of Query : \(result.count)")
-                     print("at Key of Query : \(keyDB)")
                     if result.count != 0 {
                         result[0].setValue(loadVersion, forKey: keyDB)
-                        try sharedContext.save()
+                        
+                        sharedContext.performBlock({ () -> Void in
+                            dbConnector.sharedInstance().saveContext()
+                        })
                         print("Update Version Completed")
                     }
                 } catch let error as NSError{
@@ -86,7 +87,7 @@ class apiLoader:NSObject,NSFetchedResultsControllerDelegate{
     }
     
     func postDataAPI(userID:String, callback:(jsonData:NSDictionary) -> ()){
-        
+        // For future used
     }
         
 }

@@ -9,6 +9,10 @@
 import Foundation
 
 struct config{
+    //You can change this basedAPI to be your domain 
+    //This is my domain for testing which you could get checkout the format of json based on this link
+    //http://www.thethanisorn.com/khaoyai/api/tempnow.php
+    
     static let basedAPI:String = "http://www.thethanisorn.com/khaoyai/api/"
     
     static let NEWSVER = "newsversion.php"
@@ -16,8 +20,6 @@ struct config{
     static let MAPVER = "mapversion.php"
     static let CONTACTVER = "contactsversion.php"
 
-
-    
     static let TEMPERATURE = "tempnow.php"
     static let NEWS = "news.php"
     static let HOWTO = "howto.php"

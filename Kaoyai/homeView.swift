@@ -64,11 +64,7 @@ class homeView: UIViewController,NSFetchedResultsControllerDelegate,UITableViewD
             frame.size.width = 148
             
             maskLayer.path = UIBezierPath(roundedRect: frame, byRoundingCorners: UIRectCorner.TopLeft.union(.TopRight), cornerRadii: CGSizeMake(8, 8)).CGPath
-            
-            print("tab width: \(self.tabWidth.constant) and tab: \(self.tabNameV)")
         }else{
-            
-            print("language in else")
             
             self.tabWidth.constant = 98
             
@@ -87,19 +83,14 @@ class homeView: UIViewController,NSFetchedResultsControllerDelegate,UITableViewD
         let item3 = self.tabBarController!.tabBar.items![3]
         let item4 = self.tabBarController!.tabBar.items![4]
         
-        //item.image = UIImage(named: "ElephantIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         item.selectedImage = UIImage(named: "ElephantIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        
-        //item1.image = UIImage(named: "BullIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+
         item1.selectedImage = UIImage(named: "BullIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         
-       // item2.image = UIImage(named: "MonkeyIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         item2.selectedImage = UIImage(named: "MonkeyIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         
-       // item3.image = UIImage(named: "TigerIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         item3.selectedImage = UIImage(named: "TigerIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         
-       // item4.image = UIImage(named: "DeerIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         item4.selectedImage = UIImage(named: "DeerIcon")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         
         //Fetching Data in CoreData before Checking network
