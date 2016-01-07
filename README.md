@@ -1,5 +1,4 @@
 # Khaoyai-MobileApplication-iOS
-======
 Open source for National Park of Thailand, Khaoyai in Swift 2.1
 This project need some other frameworks to make it works which I've already included in this project:
 
@@ -12,7 +11,6 @@ This project need some other frameworks to make it works which I've already incl
 NOTE: This project is supported iOS that greater than 7.0 and it's tested with iOS 9.2 succuessfully
 
 ## How to use an App
-======
 This application are supported language in Thai and English, future languages are in consideration. 
 - At start up, the application will check with the server authentication if there is any new update from Database. If not, application load information from their local database, Core Data. 
 - Information and Images used in application are downloaded in the background when start up
@@ -32,18 +30,19 @@ Divided into 4 parts: Travel section, Animal section, Don't do section, Document
 ###Map 
 Places where to go with images and details explaination. This path are linked to Howto section to explain more details about this place.
 
-### 
+###Contact
+The number of contacts in different categories. For visitors to contact officers when they have some errand or emergency
 
+###About
+Credit for officers that help National Park and Developers
 
 ## Installation
 Download as ZIP and extract it. Double-click on Xcode project and everything will work normally
 
 ## Who use it
-=====
 Anyone that's interesting to learn how to code Apple Device with Swift. This project is fully runnable without any external API. and anyone that's intersting to use this project for building application for other National Park, you need to prepare your own domain and API by yourself
 
 ## Motivation
-=====
 Khaoyai National Park is one of the Nation Park in Thailand that receive award to be World Heritage from UNESCO since 2005. Unfortunately, some visitors are not educated enough to know how to do 'sustainable tourism'. Officers at Khaoyai try their best to keep animal and visitors to live togther happily. UNESCO has planned for removed award for World Heritage since 2012 because of environment issue that Thailand can't solve. 
 
 This Application is a hope to help Thailand officers to lower a burden of problem visitors when traveling to Thailand. Application will contain information about what you should do and what you shouldn't do in offline mode.
@@ -54,5 +53,4 @@ This Application is a hope to help Thailand officers to lower a burden of proble
 
 
 ## Future Features
-====
 My next goal is to implements Beacon technology, Login with Facebook, and Gamification for the next release
