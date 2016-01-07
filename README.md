@@ -1,4 +1,19 @@
-# Kaoyai-MobileApplication-iOS
-Open source for National Park of Thailand
+# Khaoyai-MobileApplication-iOS
+Open source for National Park of Thailand, Khaoyai
+This project 
 
-Anyone who's interesting to study, research, or anything. Please feel free to use it in your own project.
+## Code Example
+
+## Motivation
+Khaoyai National Park is one of the 
+
+## Installation
+https://github.com/theamorn/Khaoyai-MobileApplication-iOS.git
+
+## API Reference
+
+## Tests
+
+## Contributors
+
+## License
