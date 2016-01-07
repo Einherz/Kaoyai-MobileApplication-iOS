@@ -49,7 +49,7 @@ This Application is a hope to help Thailand officers to lower a burden of proble
 
 
 ## API Reference
-
+Please change API that connect to the database in Folder Controller/config.swift. If you're willing to use for your own future projects
 
 
 ## Future Features
